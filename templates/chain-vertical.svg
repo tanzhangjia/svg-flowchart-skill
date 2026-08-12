@@ -1,0 +1,32 @@
+<!--
+  chain-vertical.svg — 纯垂直主链模板
+  ====================================
+  演示 R2: 一条逻辑链所有节点中心 = 同一 x → 连线全部纯垂直, 零折弯。
+  这是"少折线"的根本方法: 微调块, 不绕线。
+-->
+<svg viewBox="0 0 460 320" width="460" font-family="sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3"
+            orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa3b5"/></marker>
+  </defs>
+
+  <!-- 中心统一 = 230 -->
+  <rect x="110" y="10" width="240" height="44" rx="22" fill="#192241" stroke="none"/>
+  <text x="230" y="38" fill="#fff" font-size="14" text-anchor="middle" font-weight="bold">Node 1</text>
+
+  <line x1="230" y1="54" x2="230" y2="80" stroke="#9aa3b5" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="110" y="80" width="240" height="44" rx="8" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="230" y="107" fill="#1e2a4a" font-size="13" text-anchor="middle">Node 2</text>
+
+  <line x1="230" y1="124" x2="230" y2="150" stroke="#9aa3b5" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="110" y="150" width="240" height="44" rx="8" fill="#f0f7ff" stroke="#2563eb"/>
+  <text x="230" y="177" fill="#1e2a4a" font-size="13" text-anchor="middle">Node 3</text>
+
+  <line x1="230" y1="194" x2="230" y2="220" stroke="#9aa3b5" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="110" y="220" width="240" height="44" rx="8" fill="#f0fdf4" stroke="#10b981"/>
+  <text x="230" y="247" fill="#1e2a4a" font-size="13" text-anchor="middle">Node 4</text>
+
+  <line x1="230" y1="264" x2="230" y2="288" stroke="#9aa3b5" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="130" y="288" width="200" height="26" rx="13" fill="#192241" stroke="none"/>
+  <text x="230" y="305" fill="#fff" font-size="12" text-anchor="middle">End</text>
+</svg>
